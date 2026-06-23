@@ -53,10 +53,25 @@ footer{background:var(--dark);color:white;text-align:center;padding:42px 7%}
   align-items:start;
 }
 
-.love-image-wrap{
-  padding-top:86px;
+.love-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:start;
 }
 
+.love-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+}
+
+@media(max-width:900px){
+  .love-layout,
+  .love-cards{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 
@@ -187,23 +202,21 @@ footer{background:var(--dark);color:white;text-align:center;padding:42px 7%}
 </section>
 
 <section>
-  <div class="two-col">
-    <div>
-<h2 style="text-align:center; margin-bottom:40px;">Why Customers Love This</h2>
-      <div class="grid">
-        <div class="card"><h3>You Save Time</h3><p>No sorting. No date-ordering. No weekend lost.</p></div>
-        <div class="card"><h3>You Reduce Stress</h3><p>No more receipt piles staring at you.</p></div>
-        <div class="card"><h3>You Stay Organized</h3><p>Your receipts come back in date order.</p></div>
-        <div class="card"><h3>You Gain Peace of Mind</h3><p>Your records are easier to review, store, and share.</p></div>
-      </div>
-    </div>
-<div class="love-image-wrap">
-  <div class="photo">
-    <img src="workspace.jpg" alt="Organized workspace with binders and receipts">
-  </div>
-</div>
-</section>
+  <h2>Why Customers Love This</h2>
 
+  <div class="love-layout">
+    <div class="love-cards">
+      <div class="card"><h3>You Save Time</h3><p>No sorting. No date-ordering. No weekend lost.</p></div>
+      <div class="card"><h3>You Reduce Stress</h3><p>No more receipt piles staring at you.</p></div>
+      <div class="card"><h3>You Stay Organized</h3><p>Your receipts come back in date order.</p></div>
+      <div class="card"><h3>You Gain Peace of Mind</h3><p>Your records are easier to review, store, and share.</p></div>
+    </div>
+
+    <div class="photo">
+      <img src="workspace.jpg" alt="Organized workspace with binders and receipts">
+    </div>
+  </div>
+</section>
 <section class="soft">
 <div class="two-col love-section">
     <div class="photo"><img src="mail.jpg" alt="Envelope of receipts being mailed"></div>
