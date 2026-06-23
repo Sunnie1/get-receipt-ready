@@ -257,8 +257,12 @@ footer{background:var(--dark);color:white;text-align:center;padding:42px 7%}
   Professional Receipt Organization<br>
   Send the Pile. Get Your Life Back.<br>
   Organize@ReceiptReady.com<br><br>
-  © 2026 Receipt Ready
+  © <span id="year"></span> Receipt Ready
 </footer>
-
+  
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  
 </body>
 </html>
