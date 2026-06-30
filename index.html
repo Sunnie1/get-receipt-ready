@@ -87,7 +87,34 @@ footer{background:var(--dark);color:white;text-align:center;padding:42px 7%}
     <h1>Send the Pile. Get Your Life Back.</h1>
     <p class="lead">Receipts organized by date and prepared for easier recordkeeping, tax preparation, reimbursement requests, warranty tracking, insurance documentation, and long-term storage.</p>
     <p class="lead">No sorting required. No judgment. Original receipts returned.</p>
-    <a class="button" href="mailto:Organize@GetReceiptReady.com?subject=Receipt%20Organization%20Request">Request Receipt Organization</a>
+   <form id="contact" action="https://formspree.io/f/xvzjqwlz" method="POST">
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    style="width:100%;padding:14px;margin-bottom:12px;border-radius:8px;border:1px solid #ccc;">
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    style="width:100%;padding:14px;margin-bottom:12px;border-radius:8px;border:1px solid #ccc;">
+
+  <textarea
+    name="message"
+    placeholder="How can I help you?"
+    rows="5"
+    required
+    style="width:100%;padding:14px;margin-bottom:18px;border-radius:8px;border:1px solid #ccc;"></textarea>
+
+  <button class="button" type="submit">
+    Request Receipt Organization
+  </button>
+
+</form>
   </div>
   <div class="hero-img">
     <img src="images/hero.jpg" alt="Diverse customers holding receipt envelopes">
@@ -245,7 +272,7 @@ footer{background:var(--dark);color:white;text-align:center;padding:42px 7%}
 <section class="highlight">
   <h2>Let’s Get Your Receipts Organized</h2>
   <p class="center">One shipment. One organized return package. One less thing to worry about.</p>
-  <a class="button" href="mailto:Organize@GetReceiptReady.com?subject=Receipt%20Organization%20Request">Email: Organize@GetReceiptReady.com</a>
+  <a class="button" href="#contact">Request Receipt Organization</a>Email: Organize@GetReceiptReady.com</a>
 </section>
 
 <section class="soft">
